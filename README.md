@@ -77,12 +77,12 @@ The goal of this task is to:
 
 
 **Primary and Foreign Key Relationships**
-Table              Primary Key            	Foreign Key (→ Table)
-Customers	         CustomerID	                     –
-Categories	       CategoryID	                     –
-Products	          ProductID	              CategoryID → Categories
-Orders	             OrderID	              CustomerID → Customers
-Order_Items        	OrderItemID            	OrderID → Orders, ProductID → Products
-Payments	          PaymentID	              OrderID → Orders
-
+| **Table**       | **Primary Key**   | **Foreign Key (→ Table)**                  |
+|------------------|--------------------|---------------------------------------------|
+| **Customers**    | `CustomerID`       | –                                           |
+| **Categories**   | `CategoryID`       | –                                           |
+| **Products**     | `ProductID`        | `CategoryID → Categories`                  |
+| **Orders**       | `OrderID`          | `CustomerID → Customers`                   |
+| **Order_Items**  | `OrderItemID`      | `OrderID → Orders`, `ProductID → Products` |
+| **Payments**     | `PaymentID`        | `OrderID → Orders`                         |
 
